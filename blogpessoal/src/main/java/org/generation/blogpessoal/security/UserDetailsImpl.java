@@ -1,15 +1,15 @@
-package org.generation.blogpessoal.seguranca;
+package br.org.generation.blogpessoal.security;
 
 import java.util.Collection;
 import java.util.List;
 
-import org.generation.blogpessoal.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class UserDetailsImpl implements UserDetails{
+import br.org.generation.blogpessoal.model.Usuario;
 
-    private static final long serialVersionUID = 1L;
+public class UserDetailsImpl implements UserDetails {
+	private static final long serialVersionUID = 1L;
 
 	private String userName;
 	private String password;

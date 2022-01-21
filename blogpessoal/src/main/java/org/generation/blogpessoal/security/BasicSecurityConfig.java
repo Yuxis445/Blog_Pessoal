@@ -1,4 +1,4 @@
-package org.generation.blogpessoal.seguranca;
+package br.org.generation.blogpessoal.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -11,11 +11,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-//habilitando seguranca da pagina web
 @EnableWebSecurity
-public class BasicSecuryConfig extends WebSecurityConfigurerAdapter{
+public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
+	@Autowired
 	private UserDetailsService userDetailsService;
 
 	@Override

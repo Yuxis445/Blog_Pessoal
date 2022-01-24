@@ -1,4 +1,4 @@
-package br.org.generation.blogpessoal.configuration;
+package org.generation.blogpessoal.configuration;
 
 import org.springdoc.core.customizers.OpenApiCustomiser;
 import org.springframework.context.annotation.Bean;
@@ -27,12 +27,12 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 		            		.name("Generation Brasil")
 		            		.url("https://generation.org"))
 		    		.contact(new Contact()
-		    				.name("Melqui Santos")
-		    			  	.url("https://melqui.vercel.app")
-		                  	.email("melqsantos96@gmail.com")))
+		    				.name("Joao Victor Lopes")
+		    			  	.url("https://jvlopes.netlify.app")
+		                  	.email("luffy2033@outlook.com")))
 		    		.externalDocs(new ExternalDocumentation()
 		    				.description("Github")
-		    				.url("https://github.com/MelqSantos/Blog_Pessoal"));
+		    				.url("https://github.com/yuxis445"));
 		}
 	
 		@Bean

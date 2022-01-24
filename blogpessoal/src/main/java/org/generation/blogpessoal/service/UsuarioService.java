@@ -1,4 +1,4 @@
-package br.org.generation.blogpessoal.service;
+package org.generation.blogpessoal.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
@@ -10,9 +10,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import br.org.generation.blogpessoal.model.Usuario;
-import br.org.generation.blogpessoal.model.UsuarioLogin;
-import br.org.generation.blogpessoal.repository.UsuarioRepository;
+import org.generation.blogpessoal.model.Usuario;
+import org.generation.blogpessoal.model.UserLogin;
+import org.generation.blogpessoal.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
@@ -52,7 +52,7 @@ public Optional<Usuario> atualizarUsuario(Usuario usuario) {
 	
 	}	
 	
-	public Optional<UsuarioLogin> autenticarUsuario(Optional<UsuarioLogin> usuarioLogin){
+	public Optional<UserLogin> autenticarUsuario(Optional<UserLogin> usuarioLogin){
 		
 		Optional<Usuario> usuario = usuarioRepository.findByUsuario(usuarioLogin.get().getUsuario());
 		
